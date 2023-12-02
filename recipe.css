@@ -1,0 +1,165 @@
+/* Below * means that it selects everything. So all the elements on the page will overflow: auto behaviour. That will behaviour will adapt page so content is not going out of the page */
+        * {
+                overflow: auto;
+        }
+
+        body {
+        background-color: #8BA1BB;
+        font-family: Arial;
+        margin: 0;
+
+}
+
+/*min-width: 350px means that user cannot change the width of the window to less than 350px so the table over the image don't go out of the image. And if user does it, we will see that scrolling appears */
+        div.content{
+                background-color: white;
+                margin: 60px 10% 80px 10%;
+                padding: 0px 30px 30px 30px;
+                min-width: 350px;
+/* Four length values and a color */
+/* offset-x | offset-y | blur-radius | spread-radius | <color> */
+/*box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);*/
+                box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
+                overflow: visible;
+        }
+
+        h1{
+                text-align: center;
+                margin-top: 5px;
+                margin-bottom: 12px;
+        }
+
+        p.description{
+                text-align: center;
+                max-width: 400px; 
+                display: inline-block;
+                font-size: 14px;
+        }
+
+        .center {
+		text-align: center;
+		width: 100%;
+        }
+
+        p.category {
+                background-color: black;
+                color: white;
+                display: inline-block;
+                margin-top: -15px;
+                margin-bottom: 0px;
+                padding: 8px 20px;
+                font-weight: bold;
+                font-size: 16px;
+        }
+
+        div.category {
+                margin-bottom: 0px;
+                margin-top: 0px;
+                overflow: visible;
+        }
+
+        div.separator {
+                background-color: black;
+                height: 1px;
+                width: 100px;
+                margin-left: auto;
+                margin-right: auto;
+        }
+/*background-color: #6C829DC0 the last 2 values in color code "CO" are for transparancy
+position here means we should give a position to the table in the div. So bottom 0 here will put table on the bottom of the img. */
+        table.info {
+                position: absolute; 
+                bottom: 0; 
+                width: 100%; 
+                color: white; 
+                background-color: #6C829DC0; 
+                height: 80px;
+        }
+/*position here means that it will go relatively from the position where is starts. Currently related to the top left corner of the cake img.*/
+        div.info{
+                position: relative;
+        }
+
+/*All the td of the table that has an info class*/
+        table.info td {
+                text-align: center;
+                vertical-align: top;
+                font-size: 14px;
+        }
+
+        table.info th {
+                vertical-align: bottom;
+                padding-bottom: 8px;
+                font-size: 16px;
+        }
+
+        img.info {
+                display: block;
+                max-height: 400px;
+                object-fit: cover;
+                min-height: 200px;
+                background-color: lightgray;
+        }
+
+        div.col {
+                width: 45%;
+                margin-top: 20px;
+        }
+
+        div.col  h2 {
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 15px;
+                border-bottom: 5px solid #6C829D;
+                padding-bottom: 5px;
+        }
+
+        div.col1 {
+                display: inline-block;
+                margin-right: 10%;
+        }
+
+        div.col2 {
+                float: right;
+        }
+
+        div.ingredients p {
+                text-align: center;
+                font-size: 14px;
+                border: 1px solid lightgray;
+                padding: 8px 0;
+                margin-top: 4px;
+                margin-bottom: 0;
+        }
+
+        table.instructions p.number{
+                background-color: #6C829D;
+                color: white;
+                font-size: 14px;
+                font-weight: bold;
+                width: 25px;
+                height: 25px;
+                text-align: center;
+                padding-top: 4px;
+                box-sizing: border-box;
+                border-radius: 50%;
+                margin: 0;
+        }
+
+        table.instructions td.instruction_step {
+                padding-left: 10px;
+                padding-bottom: 10px;
+                font-size: 14px;
+
+        }
+
+        table.instructions td {
+                vertical-align: top;
+        }
+
+        table.instructions tr {
+                height: 40px;
+        }
+
+
+                	/*comment in CSS*/
