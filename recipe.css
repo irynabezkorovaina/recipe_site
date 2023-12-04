@@ -13,8 +13,8 @@
 /*min-width: 350px means that user cannot change the width of the window to less than 350px so the table over the image don't go out of the image. And if user does it, we will see that scrolling appears */
         div.content{
                 background-color: white;
-                margin: 60px 10% 80px 10%;
-                padding: 0px 30px 30px 30px;
+                margin: 40px 8px 40px 8px;
+                padding: 40px 8px 40px 8px;
                 min-width: 350px;
 /* Four length values and a color */
 /* offset-x | offset-y | blur-radius | spread-radius | <color> */
@@ -73,7 +73,7 @@ position here means we should give a position to the table in the div. So bottom
                 width: 100%; 
                 color: white; 
                 background-color: #6C829DC0; 
-                height: 80px;
+                height: 50px;
         }
 /*position here means that it will go relatively from the position where is starts. Currently related to the top left corner of the cake img.*/
         div.info{
@@ -84,13 +84,13 @@ position here means we should give a position to the table in the div. So bottom
         table.info td {
                 text-align: center;
                 vertical-align: top;
-                font-size: 14px;
+                font-size: 12px;
         }
 
         table.info th {
                 vertical-align: bottom;
                 padding-bottom: 8px;
-                font-size: 16px;
+                font-size: 14px;
         }
 
         img.info {
@@ -102,7 +102,7 @@ position here means we should give a position to the table in the div. So bottom
         }
 
         div.col {
-                width: 45%;
+                width: 100%;
                 margin-top: 20px;
         }
 
@@ -116,11 +116,12 @@ position here means we should give a position to the table in the div. So bottom
 
         div.col1 {
                 display: inline-block;
-                margin-right: 10%;
+                /*margin-right: 10%;*/
+                margin-bottom: 20px;
         }
 
         div.col2 {
-                float: right;
+                /*float: right;*/
         }
 
         div.ingredients p {
@@ -161,5 +162,46 @@ position here means we should give a position to the table in the div. So bottom
                 height: 40px;
         }
 
+/*Desktop styles https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+@media only screen and (min-width: 768px) {
+        div.content{
+                margin: 60px 10% 80px 10%;
+                padding: 0px 30px 30px 30px;
+                min-width: 350px;
 
-                	/*comment in CSS*/
+        }
+
+        table.info {
+                height: 80px;
+        }
+/*All of the td i the table that have info class */
+        table.info td {
+                font-size: 14px;
+        }
+        
+        table.info th {
+                font-size: 16px;
+        }
+
+        div.col {
+                width: 45%;
+        }
+
+        div.col1 {
+                margin-right: 10%;
+        }
+
+        div.col2 {
+                float: right;
+        }
+}
+
+/*very large screen */
+@media only screen and (min-width: 900px) {
+        div.content{
+                margin-left: auto;
+                margin-right: auto;
+                width: 650px;
+        }
+
+}
